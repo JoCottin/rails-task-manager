@@ -1,0 +1,9 @@
+<h1>tema les tasks mamen</h1>
+<ul>
+  <% @tasks.each do |task| %>
+  <li><%= link_to task.title, task_path(task) %></li>
+  <% end %>
+  <br>  <br>
+  <%= link_to 'Create a new task poto', new_path %>
+
+</ul>
